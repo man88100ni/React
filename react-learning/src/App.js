@@ -1,28 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
 import GreetFunction from './Components/FunctionalComponents/GreetFunction';
 import WelcomeClass from './Components/ClassComponents/WelcomeClass';
-
+let obj = {
+  name: "Kashish Soni",
+  age: 20,
+  class: '10th'
+}
+let obj1 = {
+  name: "Manish Soni",
+  age: 30,
+  class: '12th'
+}
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
 
-      <GreetFunction />
-      <WelcomeClass />
+      <GreetFunction name={obj.name} age={obj.age} class={obj.class} />
+      <GreetFunction name="Manish Soni" age="30" class="12th" />
+
+      <GreetFunction>
+        <h1>Hi this is message from App Component</h1>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+      </GreetFunction>
+      
+      {/* <WelcomeClass /> */}
 
 
     </div>

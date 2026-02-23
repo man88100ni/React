@@ -3,7 +3,7 @@ import React from 'react';
 class WelcomeClass extends React.Component{
     render(){
         return(
-            <div>
+            <div className=''>
                 <h1>Hello World from WelcomeClass</h1>
             </div>
         )
